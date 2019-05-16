@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gld-0t-dmG">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Second-->
+        <scene sceneID="k5i-78-Vf2">
+            <objects>
+                <viewController id="gld-0t-dmG" customClass="PickerViewController" customModule="DynamicType" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sUT-52-1q1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k86-gW-Lmy">
+                                <rect key="frame" x="16" y="328.5" width="382" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="zfz-Ra-Gzh"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="fXZ-VX-vcJ" kind="embed" id="BOc-93-mwS"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="k86-gW-Lmy" firstAttribute="centerX" secondItem="Lpi-tS-cqO" secondAttribute="centerX" id="1og-0a-xDl"/>
+                            <constraint firstItem="k86-gW-Lmy" firstAttribute="centerY" secondItem="Lpi-tS-cqO" secondAttribute="centerY" id="Td9-T9-5a6"/>
+                            <constraint firstItem="k86-gW-Lmy" firstAttribute="leading" secondItem="Lpi-tS-cqO" secondAttribute="leading" constant="16" id="q5S-Y2-jwr"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Lpi-tS-cqO"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Second" image="second" id="hq5-VU-OdW"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="pickerHeightConstraint" destination="zfz-Ra-Gzh" id="2FV-DZ-grd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sa0-tO-TgQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-62" y="58"/>
+        </scene>
+        <!--Picker State View Controller-->
+        <scene sceneID="qkf-d7-bvv">
+            <objects>
+                <viewController id="fXZ-VX-vcJ" customClass="PickerStateViewController" customModule="DynamicType" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="u7K-bP-cUB">
+                        <rect key="frame" x="0.0" y="0.0" width="382" height="200"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="EMS-eL-LzD"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WWO-l8-r2u" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="664" y="58"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="second" width="30" height="30"/>
+    </resources>
+</document>

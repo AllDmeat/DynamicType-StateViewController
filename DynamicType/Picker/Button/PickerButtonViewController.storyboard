@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="FSs-52-co0">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Picker Button View Controller-->
+        <scene sceneID="BGo-da-7Oo">
+            <objects>
+                <viewController id="FSs-52-co0" customClass="PickerButtonViewController" customModule="DynamicType" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="udA-Td-rrN">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jUK-pN-3nc">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <state key="normal" title="Выберите опцию"/>
+                                <connections>
+                                    <action selector="showItems:" destination="FSs-52-co0" eventType="touchUpInside" id="tSE-kr-dYY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="top" secondItem="jUK-pN-3nc" secondAttribute="top" id="048-k6-pGj"/>
+                            <constraint firstItem="jUK-pN-3nc" firstAttribute="leading" secondItem="udA-Td-rrN" secondAttribute="leading" id="PDz-4G-n70"/>
+                            <constraint firstAttribute="trailing" secondItem="jUK-pN-3nc" secondAttribute="trailing" id="sj3-eB-suF"/>
+                            <constraint firstItem="jUK-pN-3nc" firstAttribute="bottom" secondItem="udA-Td-rrN" secondAttribute="bottom" id="yCV-zL-1LC"/>
+                        </constraints>
+                    </view>
+                    <size key="freeformSize" width="414" height="100"/>
+                    <connections>
+                        <outlet property="button" destination="jUK-pN-3nc" id="Fwa-Dt-q5K"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qkY-py-y99" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="142" y="116"/>
+        </scene>
+    </scenes>
+</document>
